@@ -1,10 +1,6 @@
 # 🎫 Online Chatbot Ticketing System — v2
-**Team 34 · Vardhaman College of Engineering**
-Malkaraj Shrujana · Mavuru Renusri · Mitta Tanvi
-Guide: Ms. B. Pravalika
 
 ---
-
 ## Folder Structure
 
 ```
@@ -106,17 +102,3 @@ Runs at **http://localhost:3000**
 | POST   | `/chat/parse`      | NLP intent parser                    |
 | GET    | `/admin/stats`     | Dashboard statistics                 |
 | POST   | `/admin/reset`     | Reset all data (dev only)            |
-
----
-
-## Production Deployment
-
-| Service  | What it hosts    | Free tier |
-|----------|-----------------|-----------|
-| Supabase | PostgreSQL DB    | ✅ Yes    |
-| Render   | Flask backend    | ✅ Yes    |
-| Vercel   | React frontend   | ✅ Yes    |
-
-1. Create a Supabase project → copy the connection string
-2. Push `backend/` to GitHub → import on Render → set `DATABASE_URL`
-3. Push `frontend/` to GitHub → import on Vercel → set `REACT_APP_API_URL`
